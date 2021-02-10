@@ -1,0 +1,45 @@
+// Extra large devices (large desktops, 1200px and up)
+@include mediaXl {
+}
+
+// Large devices (desktops, 992px and up)
+@include mediaLg {
+  .hero_area {
+    height: auto;
+  }
+
+  .department_area .single_department h3 {
+    left: 20%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include mediaMd {
+  .hero_area {
+    height: auto;
+  }
+
+  .department_area .single_department h3 {
+    left: 10%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include mediaSm {
+  .hero_area {
+    height: auto;
+    background-size: inherit;
+  }
+
+  .department_area .single_department h3 {
+    left: 20%;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include mediaSx {
+  .hero_area {
+    height: auto;
+    background-size: inherit;
+  }
+}

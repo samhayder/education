@@ -1,0 +1,374 @@
+/* 
+Theme Name: Name of template
+Author: sams.seul@gmail.com
+Support: samhayder.dev@gmail.com
+Description: Creative HTML5 template.
+Version: 1.0;
+Credit: https://psdhub.com/downloads/education-lms-psd-template/
+*/
+/* CSS Index
+-------------------------
+1.  Import all component
+  1.1.  Template Theme Color set
+  1.2.  Global all CSS set
+  1.3.  Prefixes CSS by browser set
+  1.4.  Template Button Effect
+2.  Header Navbar CSS
+3.  Homepage CSS
+ */
+/* ----------Template Theme Color CSS---------- */
+/* Template theme color */
+/* Fonts */
+/* ----------Global all CSS---------- */
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #5a6e79;
+  background: #fdf6ee;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul a {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #252c3a;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+  line-height: inherit;
+}
+
+/* Menu Transition delay effect */
+nav_item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+nav_item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+nav_item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+nav_item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+nav_item:nth-child(5) {
+  transition-delay: 0.65s;
+}
+
+/* Set Template Margin & Padding classes Loop */
+/* ----------Custom CSS---------- */
+/* Flex Box Center CSS */
+/* Transparent CSS */
+.transparent {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Set Text Color */
+.text_primary {
+  color: #ffc178;
+}
+
+.text_secondary {
+  color: #5a6e79;
+}
+
+.font_slant {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----------Prefixes CSS by browser---------- */
+/* Prefixes CSS */
+/* @include transform(rotate(360deg)); */
+/* @include transition(all, 1s, ease-in-out); */
+/* @include border-radius(25); */
+/* ----------Responsive CSS---------- */
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Small devices (landscape phones, 576px and up) */
+/* Extra small devices (portrait phones, less than 576px) */
+/* ----------Theme Buttons CSS---------- */
+/* Template Button Effect */
+.btn_primary, .btn_secondary {
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: center;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.btn_primary:hover, .btn_secondary:hover {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}
+
+.btn_primary {
+  background: linear-gradient(to right, #ffc178, rgba(255, 193, 120, 0.8));
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  line-height: 2.778;
+  font-family: "Work Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+}
+
+.btn_primary:hover {
+  color: #ffc178;
+  border-color: #ffc178;
+  background: transparent;
+}
+
+.btn_secondary {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+  color: #ffc178;
+  padding: 10px 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.btn_secondary:hover {
+  background-color: #ffc178;
+  color: #fff;
+}
+
+/* ----------HEADER NAVBAR CSS---------- */
+.header {
+  height: 130px;
+}
+
+nav #myNavbar {
+  justify-content: flex-end;
+}
+
+nav .navbar-toggler:focus {
+  outline-color: #ffc178;
+}
+
+nav .navbar-toggler-icon {
+  font-size: 30px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+
+nav ul li.active > a {
+  color: #ffc178;
+}
+
+nav ul li a {
+  color: #5a6e79;
+  font-weight: 700;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffc178;
+}
+
+/* ----------HOMEPAGE CSS---------- */
+.hero_area {
+  height: 100vh;
+  background: url(../img/bg/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero_area .hero_text {
+  padding: 200px 0;
+}
+
+/* ----------DEPARTMENT CSS---------- */
+.department_area .single_department {
+  position: relative;
+  position: relative;
+  padding: 50px 50px 100px 50px;
+  background: #f9703a;
+}
+
+.department_area .single_department h3 {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  bottom: 10%;
+}
+
+.department_area .single_department_2 {
+  background: #7fbb40;
+}
+
+/* ----------ABOUT CSS---------- */
+.about_area .about_video {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about_area .about_video::before {
+  position: absolute;
+  content: '';
+  height: 400px;
+  width: 400px;
+  background: #fff;
+  z-index: -1;
+  left: 70px;
+  top: -12px;
+  border-radius: 50%;
+}
+
+.about_area .about_video::after {
+  position: absolute;
+  content: '';
+  background: url(../img/about/about_shape.png);
+  width: 315px;
+  height: 355px;
+  left: -75px;
+  top: 0;
+  z-index: -1;
+}
+
+.about_area .about_video img {
+  max-width: 70%;
+}
+
+.about_area .about_video a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  color: #fff;
+  background: #ffc178;
+  padding: 15px;
+  line-height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- CSS---------- */
+/* ---------- CSS---------- */
+/* ---------- CSS---------- */
+/* ----------Import RESPONSIVE CSS---------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero_area {
+    height: auto;
+  }
+  .department_area .single_department h3 {
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero_area {
+    height: auto;
+  }
+  .department_area .single_department h3 {
+    left: 10%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero_area {
+    height: auto;
+    background-size: inherit;
+  }
+  .department_area .single_department h3 {
+    left: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero_area {
+    height: auto;
+    background-size: inherit;
+  }
+}

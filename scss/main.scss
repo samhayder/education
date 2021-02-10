@@ -1,0 +1,382 @@
+/* 
+Theme Name: Name of template
+Author: sams.seul@gmail.com
+Support: samhayder.dev@gmail.com
+Description: Creative HTML5 template.
+Version: 1.0;
+Credit: https://psdhub.com/downloads/education-lms-psd-template/
+*/
+
+/* CSS Index
+-------------------------
+1.  Import all component
+  1.1.  Template Theme Color set
+  1.2.  Global all CSS set
+  1.3.  Prefixes CSS by browser set
+  1.4.  Template Button Effect
+2.  Header Navbar CSS
+3.  Homepage CSS
+ */
+
+/* ----------Template Theme Color CSS---------- */
+/* Template theme color */
+$primaryColor: #ffc178;
+$secondaryColor: #5a6e79;
+$bodyColor: #fdf6ee;
+$headingColor: #252c3a;
+$white: #fff;
+/* Fonts */
+$fontPrimary: 'Work Sans', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
+
+/* ----------Global all CSS---------- */
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $fontPrimary;
+  font-weight: normal;
+  font-style: normal;
+  color: $secondaryColor;
+  background: $bodyColor;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontSecondary;
+  font-weight: 700;
+  color: $headingColor;
+}
+
+.fix {
+  overflow: hidden;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+  line-height: inherit;
+}
+
+/* Menu Transition delay effect */
+@for $i from 1 through 5 {
+  nav_item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
+  }
+}
+/* Set Template Margin & Padding classes Loop */
+
+/* ----------Custom CSS---------- */
+/* Flex Box Center CSS */
+@mixin flexCenter($direction) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+/* Transparent CSS */
+.transparent {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/* Set Text Color */
+.text {
+  &_primary {
+    color: $primaryColor;
+  }
+  &_secondary {
+    color: $secondaryColor;
+  }
+}
+.font_slant {
+  font-family: $fontSecondary;
+}
+
+/* ----------Prefixes CSS by browser---------- */
+/* Prefixes CSS */
+@mixin transform($property) {
+  transform: $property;
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+} /* @include transform(rotate(360deg)); */
+
+@mixin transition($duration) {
+  transition: all $duration ease;
+  -webkit-transition: all $duration ease;
+  -moz-transition: all $duration ease;
+  -ms-transition: all $duration ease;
+  -o-transition: all $duration ease;
+} /* @include transition(all, 1s, ease-in-out); */
+
+@mixin transitionEaseInOut($duration) {
+  transition: all $duration ease-in-out;
+  -webkit-transition: all $duration ease-in-out;
+  -moz-transition: all $duration ease-in-out;
+  -ms-transition: all $duration ease-in-out;
+  -o-transition: all $duration ease-in-out;
+}
+
+@mixin border-radius($size) {
+  border-radius: $size;
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -ms-border-radius: $size;
+  -o-border-radius: $size;
+} /* @include border-radius(25); */
+
+/* ----------Responsive CSS---------- */
+/* Extra large devices (large desktops, 1200px and up) */
+@mixin mediaXl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@mixin mediaLg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@mixin mediaMd {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@mixin mediaSm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@mixin mediaSx {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+/* ----------Theme Buttons CSS---------- */
+/* Template Button Effect */
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: center;
+  @include transitionEaseInOut(1s);
+  &:hover {
+    @include transform(scale(0.98));
+  }
+}
+
+.btn_primary {
+  @extend%btn;
+  background: linear-gradient(
+    to right,
+    $primaryColor,
+    rgba($primaryColor, 0.8)
+  );
+  color: $white;
+  font-size: 18px;
+  padding: 15px 30px;
+  line-height: 2.778;
+  font-family: $fontPrimary;
+  border-color: transparent;
+  @include border-radius(50px);
+  @include transitionEaseInOut(2s);
+
+  &:hover {
+    color: $primaryColor;
+    border-color: $primaryColor;
+    background: transparent;
+  }
+}
+
+.btn_secondary {
+  @extend%btn;
+  background-color: $white;
+  box-shadow: 0 0 10px #ddd;
+  color: $primaryColor;
+  padding: 10px 15px;
+  @include border-radius(25px);
+  @include transitionEaseInOut(1s);
+
+  &:hover {
+    background-color: $primaryColor;
+    color: $white;
+  }
+}
+
+/* ----------HEADER NAVBAR CSS---------- */
+.header {
+  height: 130px;
+}
+nav {
+  #myNavbar {
+    justify-content: flex-end;
+  }
+
+  .navbar-toggler {
+    &:focus {
+      outline-color: $primaryColor;
+    }
+    &-icon {
+      font-size: 30px;
+    }
+  }
+
+  ul {
+    li {
+      margin: 0 20px;
+
+      @include mediaLg {
+        margin: 0 10px;
+      }
+
+      &.active > a {
+        color: $primaryColor;
+      }
+
+      a {
+        color: $secondaryColor;
+        font-weight: 700;
+        @include transitionEaseInOut(1s);
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+/* ----------HOMEPAGE CSS---------- */
+.hero_area {
+  height: 100vh;
+  background: url(../img/bg/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .hero_text {
+    padding: 200px 0;
+  }
+}
+
+/* ----------DEPARTMENT CSS---------- */
+.department_area {
+  .single_department {
+    position: relative;
+    position: relative;
+    padding: 50px 50px 100px 50px;
+    background: #f9703a;
+
+    h3 {
+      position: absolute;
+      font-size: 30px;
+      color: #fff;
+      bottom: 10%;
+    }
+  }
+  .single_department_2 {
+    background: #7fbb40;
+  }
+}
+/* ----------ABOUT CSS---------- */
+.about_area {
+  .about_video {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 400px;
+      width: 400px;
+      background: $white;
+      z-index: -1;
+      left: 70px;
+      top: -12px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url(../img/about/about_shape.png);
+      width: 315px;
+      height: 355px;
+      left: -75px;
+      top: 0;
+      z-index: -1;
+    }
+
+    img {
+      max-width: 70%;
+    }
+
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 35px;
+      color: $white;
+      background: $primaryColor;
+      padding: 15px;
+      line-height: 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+/* ---------- CSS---------- */
+
+/* ---------- CSS---------- */
+
+/* ---------- CSS---------- */
+
+/* ----------Import RESPONSIVE CSS---------- */
+@import 'responsive';
