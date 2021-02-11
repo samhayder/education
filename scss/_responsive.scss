@@ -11,6 +11,10 @@
   .department_area .single_department h3 {
     left: 20%;
   }
+
+  .about_area .about_video::after {
+    left: -25px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -21,6 +25,16 @@
 
   .department_area .single_department h3 {
     left: 10%;
+  }
+
+  .about_area .about_video::before {
+    height: 270px;
+    width: 270px;
+    left: 28px;
+    top: -20px;
+  }
+  .about_area .about_video::after {
+    left: -145px;
   }
 }
 
@@ -34,12 +48,39 @@
   .department_area .single_department h3 {
     left: 20%;
   }
+
+  .about_area .about_video {
+    margin-bottom: 75px;
+  }
+
+  .about_area .about_video::before {
+    height: 330px;
+    width: 330px;
+    left: 47px;
+    top: -19px;
+  }
+  .about_area .about_video::after {
+    left: -130px;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@include mediaSx {
+@include mediaXs {
   .hero_area {
     height: auto;
     background-size: inherit;
+  }
+
+  .about_area .about_video {
+    margin-bottom: 75px;
+  }
+  .about_area .about_video::before {
+    height: 330px;
+    width: 330px;
+    left: 60px;
+    top: -10px;
+  }
+  .about_area .about_video::after {
+    left: -60px;
   }
 }

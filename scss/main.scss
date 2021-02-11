@@ -25,6 +25,8 @@ $secondaryColor: #5a6e79;
 $bodyColor: #fdf6ee;
 $headingColor: #252c3a;
 $white: #fff;
+$green: #43cb83;
+$orange: #ff5f72;
 /* Fonts */
 $fontPrimary: 'Work Sans', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
@@ -128,6 +130,12 @@ button:focus {
   &_secondary {
     color: $secondaryColor;
   }
+  &_green {
+    color: $green;
+  }
+  &_orange {
+    color: $orange;
+  }
 }
 .font_slant {
   font-family: $fontSecondary;
@@ -193,7 +201,7 @@ button:focus {
   }
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@mixin mediaSx {
+@mixin mediaXs {
   @media (max-width: 575px) {
     @content;
   }
@@ -371,8 +379,17 @@ nav {
       transform: translate(-50%, -50%);
     }
   }
+
+  .about_text {
+    .counter_list {
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
 }
-/* ---------- CSS---------- */
+/* ---------- ABOUT CSS---------- */
 
 /* ---------- CSS---------- */
 

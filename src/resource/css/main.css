@@ -126,6 +126,14 @@ nav_item:nth-child(5) {
   color: #5a6e79;
 }
 
+.text_green {
+  color: #43cb83;
+}
+
+.text_orange {
+  color: #ff5f72;
+}
+
 .font_slant {
   font-family: "Montserrat", sans-serif;
 }
@@ -334,7 +342,12 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
-/* ---------- CSS---------- */
+.about_area .about_text .counter_list h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* ---------- ABOUT CSS---------- */
 /* ---------- CSS---------- */
 /* ---------- CSS---------- */
 /* ----------Import RESPONSIVE CSS---------- */
@@ -345,6 +358,9 @@ nav ul li a:hover {
   .department_area .single_department h3 {
     left: 20%;
   }
+  .about_area .about_video::after {
+    left: -25px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -353,6 +369,15 @@ nav ul li a:hover {
   }
   .department_area .single_department h3 {
     left: 10%;
+  }
+  .about_area .about_video::before {
+    height: 270px;
+    width: 270px;
+    left: 28px;
+    top: -20px;
+  }
+  .about_area .about_video::after {
+    left: -145px;
   }
 }
 
@@ -364,11 +389,35 @@ nav ul li a:hover {
   .department_area .single_department h3 {
     left: 20%;
   }
+  .about_area .about_video {
+    margin-bottom: 75px;
+  }
+  .about_area .about_video::before {
+    height: 330px;
+    width: 330px;
+    left: 47px;
+    top: -19px;
+  }
+  .about_area .about_video::after {
+    left: -130px;
+  }
 }
 
 @media (max-width: 575px) {
   .hero_area {
     height: auto;
     background-size: inherit;
+  }
+  .about_area .about_video {
+    margin-bottom: 75px;
+  }
+  .about_area .about_video::before {
+    height: 330px;
+    width: 330px;
+    left: 60px;
+    top: -10px;
+  }
+  .about_area .about_video::after {
+    left: -60px;
   }
 }

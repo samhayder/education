@@ -15,7 +15,7 @@
 #### Counter UP by About Section: https://github.com/bfintal/Counter-Up
 
 ```bash
-js:
+js Link:
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 <!-- Counter UP JS -->
@@ -27,6 +27,22 @@ $('.counter').counterUp({
     delay: 10,
     time: 3000,
 });
+
+>> index.html
+<div class="counter_up py-4 d-flex justify-content-between flex-wrap">
+  <div class="counter_list">
+    <h2 class="counter">4000</h2>
+    <h4>Students</h4>
+  </div>
+  <div class="counter_list">
+    <h2 class="counter">260</h2>
+    <h4>Courses</h4>
+  </div>
+  <div class="counter_list">
+    <h2 class="counter">5679</h2>
+    <h4>Hours video</h4>
+  </div>
+</div>
 ```
 
 #### Magnific Popup by Menu Item img gallery show: https://dimsemenov.com/plugins/magnific-popup/
