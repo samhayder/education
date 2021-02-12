@@ -49,8 +49,6 @@ $('.counter').counterUp({
 
 ## Documentation:
 
-#### Reviews section Bootstrap Carousel
-
 ```bash
 >> index.html
 #### Footer Section Email embed
