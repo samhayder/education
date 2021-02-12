@@ -49,9 +49,11 @@ $('.counter').counterUp({
 
 ## Documentation:
 
+#### Footer Section Email embed
+
 ```bash
 >> index.html
-#### Footer Section Email embed
+
 <form action="#">
   <div class="input-group">
     <input
