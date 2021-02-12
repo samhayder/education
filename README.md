@@ -49,11 +49,11 @@ $('.counter').counterUp({
 
 ## Documentation:
 
-#### Reviews section Bootstrap Carousel
+#### Footer Section Email embed
 
 ```bash
 >> index.html
-#### Footer Section Email embed
+
 <form action="#">
   <div class="input-group">
     <input

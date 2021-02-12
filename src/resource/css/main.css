@@ -21,7 +21,7 @@ Credit: https://psdhub.com/downloads/education-lms-psd-template/
 /* Fonts */
 /* ----------Global all CSS---------- */
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,7 +29,7 @@ Credit: https://psdhub.com/downloads/education-lms-psd-template/
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #5a6e79;
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #252c3a;
 }
@@ -135,7 +135,7 @@ nav_item:nth-child(5) {
 }
 
 .font_slant {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ----------Prefixes CSS by browser---------- */
@@ -151,8 +151,7 @@ nav_item:nth-child(5) {
 /* Extra small devices (portrait phones, less than 576px) */
 /* ----------Theme Buttons CSS---------- */
 /* Template Button Effect */
-.btn_primary,
-.btn_secondary {
+.btn_primary, .btn_secondary {
   display: inline-block;
   border-radius: 5px;
   vertical-align: center;
@@ -163,8 +162,7 @@ nav_item:nth-child(5) {
   -o-transition: all 1s ease-in-out;
 }
 
-.btn_primary:hover,
-.btn_secondary:hover {
+.btn_primary:hover, .btn_secondary:hover {
   transform: scale(0.98);
   -webkit-transform: scale(0.98);
   -moz-transform: scale(0.98);
@@ -178,7 +176,7 @@ nav_item:nth-child(5) {
   font-size: 18px;
   padding: 15px 30px;
   line-height: 2.778;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   border-color: transparent;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -509,6 +507,10 @@ nav ul li a:hover {
   background: #1d232e;
 }
 
+.copyright_area .copyright_nav {
+  text-align: right;
+}
+
 /* ----------Import RESPONSIVE CSS---------- */
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero_area {
@@ -574,21 +576,25 @@ nav ul li a:hover {
     background-size: inherit;
   }
   .about_area .about_video {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .about_area .about_video::before {
-    height: 330px;
-    width: 330px;
-    left: 60px;
-    top: -10px;
+    height: 170px;
+    width: 170px;
+    left: 25px;
+    top: -8px;
   }
   .about_area .about_video::after {
-    left: -60px;
+    background: none;
   }
   .around_area .single_course {
     height: auto;
   }
   .around_area .single_course img {
     width: 100%;
+  }
+  .copyright_nav li {
+    display: block;
+    text-align: center;
   }
 }

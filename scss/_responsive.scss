@@ -79,16 +79,16 @@
   }
 
   .about_area .about_video {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .about_area .about_video::before {
-    height: 330px;
-    width: 330px;
-    left: 60px;
-    top: -10px;
+    height: 170px;
+    width: 170px;
+    left: 25px;
+    top: -8px;
   }
   .about_area .about_video::after {
-    left: -60px;
+    background: none;
   }
 
   .around_area .single_course {
@@ -96,5 +96,10 @@
   }
   .around_area .single_course img {
     width: 100%;
+  }
+
+  .copyright_nav li {
+    display: block;
+    text-align: center;
   }
 }
