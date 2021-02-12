@@ -1,8 +1,10 @@
-# Education: https://samhayder-education.netlify.app/
+# Education: https://samhayder-education.netlify.app/src/
 
-> Website HTML Template
+> Education- Website HTML Template with SASS
 
 ## Template Info
+
+This education theme bundle is a perfect solution for school, college, university, language center, kids education, and any educational institute.
 
 ### Author
 
@@ -45,61 +47,26 @@ $('.counter').counterUp({
 </div>
 ```
 
-#### Magnific Popup by Menu Item img gallery show: https://dimsemenov.com/plugins/magnific-popup/
-
-```bash
-css: <link rel="stylesheet" href="./resources/css/magnific-popup.css">
-js: <script src="./resources/js/jquery.magnific-popup-v1-1.min.js"></script>
-
->> app.js
-$(".parent-container").magnificPopup({
-    delegate: "a",
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-});
-```
-
 ## Documentation:
 
 #### Reviews section Bootstrap Carousel
 
 ```bash
 >> index.html
-<div id="slider" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <!-- ... -->
-    </div> <!-- end carousel single item -->
-  </div> <!-- end carousel inner -->
-
-  <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a> <!-- end carousel control previous -->
-  <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a> <!-- end carousel control next -->
-
-</div> <!-- end of main carousel div -->
-
-```
-
-#### Contact section embed google map
-
-```bash
->> index.html
-<div class="embed-responsive embed-responsive-21by9">
-  <iframe
-    class="embed-responsive-item"
-    src="//google map location link//"
-    width="100%"
-    frameborder="0"
-    style="border: 0;"
-    allowfullscreen=""
-    aria-hidden="false"
-    tabindex="0"
-  ></iframe>
-</div>
+#### Footer Section Email embed
+<form action="#">
+  <div class="input-group">
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Email address"
+    />
+    <div class="input-group-append">
+      <span class="input-group-text text-uppercase"
+        >GET HELP</span
+      >
+    </div>
+  </div>
+</form>
 
 ```

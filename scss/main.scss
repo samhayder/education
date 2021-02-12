@@ -389,11 +389,129 @@ nav {
     }
   }
 }
-/* ---------- ABOUT CSS---------- */
+/* ---------- AROUND CSS---------- */
+.around_area {
+  .single_course {
+    max-height: 385px;
+    box-shadow: 0 0 5px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    @include border-radius(5px);
+    @include transitionEaseInOut(1s);
 
-/* ---------- CSS---------- */
+    img {
+      width: 100vh;
+      @include transitionEaseInOut(1s);
+    }
 
-/* ---------- CSS---------- */
+    h6 {
+      font-size: 16px;
+      @include transitionEaseInOut(1s);
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    a {
+      display: block;
+      color: #9ca8af;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px #ddd;
+    }
+    &:hover img {
+      @include transform(scale(1.1));
+    }
+    &:hover h6 {
+      color: $orange;
+      text-decoration: underline;
+      font-size: 22px;
+    }
+    &:hover p {
+      color: $secondaryColor;
+    }
+    &:hover a {
+      color: #84878d;
+    }
+  }
+}
+/* ----------FOOTER CSS---------- */
+.footer_area {
+  background: $headingColor;
+
+  p {
+    color: #969595;
+    font-size: 14px;
+  }
+
+  h6 {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+
+  .social_link {
+    a {
+      color: #4a4a4a;
+      font-size: 18px;
+      @include transitionEaseInOut(1s);
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .footer_nav {
+    li {
+      display: block;
+    }
+    a {
+      color: #969595;
+      font-size: 14px;
+      margin-bottom: 30px;
+      @include transitionEaseInOut(1s);
+
+      .span {
+        font-size: 12px;
+        color: #6b6b6b;
+      }
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .footer_form {
+    p {
+      margin-bottom: 30px;
+    }
+    input {
+      background: $white;
+      font-size: 12px;
+      color: #4a4a4a;
+      padding: 20px;
+      @include border-radius(0);
+    }
+    span.input-group-text {
+      background: $primaryColor;
+      color: $white;
+      border-color: $primaryColor;
+      font-size: 12px;
+      cursor: pointer;
+      @include border-radius(0);
+    }
+  }
+}
+
+/* ----------COPY-RIGHT CSS---------- */
+.copyright_area {
+  background: #1d232e;
+}
 
 /* ----------Import RESPONSIVE CSS---------- */
 @import 'responsive';

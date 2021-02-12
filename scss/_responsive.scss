@@ -62,6 +62,13 @@
   .about_area .about_video::after {
     left: -130px;
   }
+
+  .around_area .single_course {
+    height: auto;
+  }
+  .around_area .single_course img {
+    width: 100%;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -82,5 +89,12 @@
   }
   .about_area .about_video::after {
     left: -60px;
+  }
+
+  .around_area .single_course {
+    height: auto;
+  }
+  .around_area .single_course img {
+    width: 100%;
   }
 }
